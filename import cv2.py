@@ -26,5 +26,5 @@ with imageio.get_writer("HEY.gif", mode="I") as writer:
     for idx, frame in enumerate(frames):
         print("Adding frame to GIF file: ", idx + 1)
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        writer.append_data(frame)
+        writer.append_data(rgb)
         
